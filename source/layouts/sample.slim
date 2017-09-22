@@ -1,0 +1,12 @@
+html
+	head
+		meta charset="utf-8"
+		title == current_page.data.title
+		meta name="keywords" content="#{current_page.data.keywords}"
+		meta name="description" content="#{current_page.data.description}"
+body
+	== partial 'layouts/header'
+	#contents
+		== yield
+	== partial 'layouts/footer'
+
